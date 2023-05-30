@@ -1,0 +1,802 @@
+@import url('https://fonts.cdnfonts.com/css/beau');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    background: #A62E30;
+    display: flex;
+    color: #FFD7C7;
+    justify-content: space-between;
+}
+
+nav .navlinks {
+    display: flex;
+    list-style: none;
+}
+
+nav .navlinks li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2vw;
+    color: #FFD7C7;
+    font-size: 1.8vw;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav .navlinks li a:hover {
+    color: #F8804F;
+}
+
+nav .logo {
+    width: 6.8vw;
+    height: 6.8vw;
+}
+
+nav .openMenu {
+    display: none;
+}
+.icons a{
+    color: #FFD7C7;
+}
+nav .navlinks .closeMenu,
+.icons i {
+    display: none;
+}
+
+
+.home-intro {
+    background-image: url(images/homeintro.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.home-intro .left-column h2,
+.home-intro .right-column h2 {
+    font-family: 'Beau', sans-serif;
+    text-decoration: none;
+    font-size: 6.4vw;
+    color: #FFECE4;
+    font-weight: 400;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.home-intro .left-column h2 {
+    padding-left: 9vw;
+    padding-top: 3.5vw;
+}
+
+.home-intro .right-column h2 {
+    padding-right: 8.8vw;
+    padding-top: 15.5vw;
+    text-align: right;
+}
+
+.container-pt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E9D3CF;
+    width: 100%;
+}
+
+.container-pt .left-column {
+    text-align: center;
+}
+
+.container-pt .left-column p1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.7vw;
+    color: #9E3A10;
+    line-height: 2.5vw;
+}
+
+.container-pt .left-column .big {
+    display: block;
+}
+
+.container-pt .left-column .small {
+    display: none;
+}
+
+.container-pt .right-column {
+    margin-top: 2vw;
+    margin-bottom: 2.1vw;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.container-c .left-column .box,
+.container-c .right-column .box {
+    border-radius: 60px;
+    opacity: 40%;
+    width: 33.8vw;
+    height: 43vw;
+}
+
+.home-characters {
+    background-color: #A62E30;
+    width: 100%;
+    height: 70vw;
+}
+
+.title {
+    text-align: left;
+    padding-left: 10vw;
+    font-size: 1.7vw;
+    letter-spacing: 0.2vw;
+    padding-top: 4vw;
+    font-family: 'Oswald', sans-serif;
+}
+
+.home-characters .title {
+    color: #FFD7C7;
+}
+
+.home-characters .row,
+.home-worldbuilding .row {
+    padding: 5vw;
+    padding-right: 12vw;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.box {
+    position: absolute;
+    height: 49.7vw;
+    width: 33.8vw;
+    border-radius: 2.9vw;
+    opacity: 40%;
+    z-index: 1;
+    transition: .3s;
+    background: #F8804F;
+}
+
+#page1 .row:hover> :not(:hover) {
+    opacity: .7;
+}
+
+.row .column img {
+    width: 31.1vw;
+    height: 25.1vw;
+    border-radius: 2.9vw;
+    z-index: 2;
+    margin-top: 1vw;
+}
+
+.row .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-characters .column p2,
+.home-characters .column p3 {
+    color: #FFD7C7;
+}
+
+.column p2 {
+    font-family: 'Beau', sans-serif;
+    font-size: 1.8vw;
+    z-index: 2;
+    margin-bottom: 0.5vw;
+    margin-top: 0.7vw;
+}
+
+.column p3 {
+    font-size: 1.5vw;
+    padding: 0vw 9.7vw;
+    height: 11.2vw;
+    text-align: center;
+    z-index: 2;
+    font-family: 'Beau', sans-serif;
+}
+
+.home-characters .column .pandatext {
+    padding: 0vw 3vw;
+}
+
+.button {
+    padding-top: 7.2vw;
+    padding-left: 41.4vw;
+    display: flex;
+}
+
+.home-characters .see-all {
+    background: #FF8989;
+    color: #B22124;
+}
+
+.see-all {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2vw;
+    padding: 5px 9px;
+    margin-left: 42.5vw;
+    border-radius: 60px;
+    text-decoration: none;
+}
+
+.home-characters .see-all:hover {
+    background: #FFD7C7;
+    color: #B22124;
+    box-shadow: 1px 1px 3px #FFD7C7;
+}
+
+.home-worldbuilding {
+    background-color: #F5D5C8;
+    width: 100%;
+    height: 70vw;
+}
+
+.home-worldbuilding .title {
+    color: #A62E30;
+}
+
+.home-worldbuilding .column p2,
+.home-worldbuilding .column p3 {
+    color: #A62E30;
+}
+
+.home-worldbuilding .chunkytext {
+    padding: 0vw 8vw;
+    font-size: 1.3vw;
+}
+
+.home-worldbuilding .torontotext {
+    padding: 0vw 4vw;
+}
+
+.home-worldbuilding .see-all {
+    background: #A62E30;
+    color: #F5D5C8;
+}
+
+.home-worldbuilding .see-all:hover {
+    background: #FFA581;
+    color: #F5D5C8;
+    box-shadow: 1px 1px 3px #FFA581;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #A62E30;
+}
+
+.footersocial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footersocial p5 {
+    color: #F5D5C8;
+    font-family: 'Beau', sans-serif;
+    font-size: 1.2vw;
+    padding-top: 0.3vw;
+    letter-spacing: 0.28vw;
+}
+
+.footericons i {
+    display: inline-block;
+    padding: 12px;
+    font-size: 1.2vw;
+    cursor: pointer;
+    color: #FFD7C7;
+}
+
+.fa-facebook:hover {
+    color: #1178F1;
+}
+
+.fa-twitter:hover {
+    color: #229AF1;
+}
+
+.fa-instagram:hover {
+    color: #FE267C;
+}
+
+.fa-youtube:hover {
+    color: #FB0302;
+}
+
+.footerlogo img {
+    width: 4.8vw;
+    height: 4.8vw;
+    cursor: pointer;
+    padding-top: 0.3vw;
+}
+
+footer p4 {
+    font-family: 'Beau', sans-serif;
+    font-size: 1.2vw;
+    color: #FFD7C7;
+}
+
+#page2, #page3,#page4 {
+    background-color: #FFE7D1;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+.characters .title,
+.worldbuilding .title {
+    color: #A62E30;
+    padding-top: 8vw;
+}
+
+#page2 .row, #page3 .row {
+    padding: 5.5vw;
+    margin-bottom: 3vw;
+}
+#page2 .row .column, #page3 .row .column{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 2vw;
+}
+
+#page2 .box{
+    height: 39.7vw;
+    width: 100%;
+}
+#page3 .box{
+    height: 50vw;
+    width: 100%;
+}
+#page2 .row .column img,
+#page3 .row .column img {
+    width: 100%;
+    height: 17.1vw;
+    border-radius: 2.9vw;
+    z-index: 2;
+    margin-top: 1vw;
+}
+
+#page2 p2,#page3 p2{
+    color: #87191B;
+}
+ #page2 p3, #page3 p3{
+    color: #A62E30;
+ }
+#page2 p2, #page3 p2 {
+    font-size: 1.7vw;
+}
+#page2 p3{
+    font-size: 1.5vw;
+    width: 100%;
+    padding: 0vw 1vw;
+}
+#page3 p3{
+    font-size: 1.41vw;
+    width: 100%;
+    padding: 0vw 0.3vw;
+}
+#page2 footer {
+    margin-top: 10vw;
+}
+#page3 footer {
+    margin-top: 20vw;
+}
+#page4 .contact .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact h1{
+    color: #A62E30;
+    font-size: 3vw;
+  letter-spacing: 0.3vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  text-align: center;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    background: #ffb897;
+    padding: 30px;
+    margin: 100px auto;
+    box-shadow: 1px 1px 25px #ffc4a9;
+    border-radius: 10px;
+    border: 6px solid #A62E30;
+}
+.form-items .input{
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 13px 30px;
+    box-sizing: border-box;
+    background: #FFE7D1;
+    border: 0px;
+    outline: none;
+    border-radius: 30px;
+    resize: none;
+}
+.form-items .input .message{
+    height: 125px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    padding: 15px 15px;
+    resize: none;
+}
+.submitform button[type="submit"]{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 25px;
+    background: #A62E30;
+    border: 0;
+    color: #FFE7D1;
+    padding: 15px;
+    font-size: 20px;
+}
+.submitform button:hover{
+    background-color: #7e0002;
+}
+@media screen and (max-width:1023px) {
+    nav .navlinks li a {
+        padding: 2.5vw;
+        color: #FFD7C7;
+        font-size: 2.1vw;
+    }
+
+    nav .logo {
+        width: 7.7vw;
+        height: 7.7vw;
+    }
+
+    .footersocial p5 {
+        font-size: 1.5vw;
+    }
+
+    .footericons i {
+        font-size: 2.5vw;
+    }
+
+    .footerlogo img {
+        width: 6.8vw;
+        height: 6.8vw;
+    }
+
+    footer p4 {
+        font-size: 1.65vw;
+    }
+    #page2 p3 {
+        font-size: 1.54vw;
+        padding: 0vw 1.1vw;
+    }
+    #page2 p2 {
+        font-size: 2.2vw;
+    }
+    #page3 .row{
+        margin-bottom: 10vw;
+    }
+    #page3 .box{
+        height: 55vw;
+    }
+    #page3 p3{
+        font-size: 1.5vw;
+    }
+    .characters .title, .worldbuilding .title{
+        font-size: 2vw;
+    }
+    .contact h1{
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width:1362px) {
+
+    .container-pt {
+        flex-direction: column;
+    }
+
+    .container-pt .left-column .big {
+        display: none;
+    }
+
+    .container-pt .left-column .small {
+        display: block;
+    }
+
+    .container-pt .left-column p1 {
+        font-size: 1.9vw;
+    }
+
+    .container-c {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:780px) {
+    nav {
+        height: 8.6vw;
+    }
+
+    nav .logo {
+        width: 8.8vw;
+        height: 8.8vw;
+    }
+
+    nav .navlinks {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: #582929;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .navlinks .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 3.5vw;
+        cursor: pointer;
+    }
+
+    nav .openMenu {
+        display: block;
+        cursor: pointer;
+        right: 20px;
+        font-size: 3.2vw;
+        top: 18px;
+        position: absolute;
+    }
+
+    nav .navlinks li a {
+        font-size: 3vw;
+    }
+
+    nav .navlinks li a:hover {
+        background: none;
+        color: #F8804F;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    .fa-facebook:hover {
+        color: #1178F1;
+    }
+
+    .fa-twitter:hover {
+        color: #229AF1;
+    }
+
+    .fa-instagram:hover {
+        color: #FE267C;
+    }
+
+    .fa-youtube:hover {
+        color: #FB0302;
+    }
+
+    .home-characters,
+    .home-worldbuilding {
+        height: 185vw;
+    }
+
+    .home-characters .row, .home-worldbuilding .row {
+        flex-direction: column;
+        gap: 32vw;
+    }
+
+    .column p2 {
+        font-size: 3vw;
+    }
+
+    .home-characters .column p3 {
+        padding: 0vw 17.5vw;
+        font-size: 2.5vw;
+    }
+
+    .home-characters .column .pandatext {
+        padding: 0vw 17vw;
+    }
+
+    .box {
+        height: 80vw;
+        width: 50vw;
+    }
+
+    .home-characters .row .column img, .home-worldbuilding .row .column img {
+        width: 41.1vw;
+        height: 35.1vw;
+    }
+
+    .button {
+        padding-top: 25vw;
+        padding-left: 32vw;
+    }
+
+    .see-all {
+        font-size: 1.9vw;
+        padding: 7px 12px;
+        margin-left: 42.5vw;
+    }
+
+    .home-worldbuilding .chunkytext {
+        padding: 0vw 17.2vw;
+        font-size: 2.3vw;
+    }
+
+    .home-worldbuilding .torontotext {
+        padding: 0vw 18vw;
+        font-size: 2.7vw;
+    }
+
+    .footersocial p5 {
+        font-size: 2.5vw;
+    }
+
+    .footericons i {
+        font-size: 3vw;
+    }
+
+    .footerlogo img {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    footer p4 {
+        font-size: 1.75vw;
+    }
+    .characters .column{
+        flex: 100%;
+        max-width: 500px;
+    }
+    .characters .title, .worldbuilding .title{
+        font-size: 2.5vw;
+    }
+    #page2 .characters .row, #page3 .worldbuilding .row{
+        flex-direction: column;
+        padding: 5vw;
+    }
+    #page2 .characters .row .column, #page3 .worldbuilding .row .column{
+        margin: 10vw;
+    }
+    #page2 .characters .row img{
+        height: 23vw;
+    }
+    #page3 .worldbuilding .row img{
+        height: 28vw;
+    }
+    #page2 p3 {
+        font-size: 2.2vw;
+        padding: 0vw 1.5vw;
+    }
+    #page3 p3 {
+        font-size: 2.25vw;
+        padding: 0vw 0.5vw;
+    }
+    #page2 .box{
+        height: 49vw;
+    }
+    #page3 .box{
+        height: 53vw;
+        width: 100%;
+    }
+    #page2 p2 {
+        font-size: 2.8vw;
+    }
+    #page3 p2 {
+        font-size: 2.7vw;
+    }
+    .contact h1{
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav .openMenu {
+        font-size: 3.8vw;
+        top: 13px;
+    }
+
+    nav .logo {
+        width: 9.9vw;
+        height: 9.9vw;
+    }
+
+    .button {
+        padding-top: 25.5vw;
+        padding-left: 32vw;
+    }
+
+    .see-all {
+        font-size: 1.8vw;
+        padding: 5px 10px;
+        margin-left: 42.5vw;
+    }
+
+    .home-worldbuilding .torontotext {
+        padding: 0vw 17vw;
+        font-size: 2.7vw;
+    }
+
+    .footersocial p5 {
+        font-size: 3.4vw;
+    }
+
+    .footericons i {
+        font-size: 3.2vw;
+    }
+
+    .footerlogo img {
+        width: 9.5vw;
+        height: 9.5vw;
+    }
+
+    footer p4 {
+        font-size: 2.1vw;
+    }
+    .characters .title, .worldbuilding .title{
+        font-size: 2.8vw;
+    }
+    #page2 .box{
+        height: 54vw;
+    }
+    #page2 p3 {
+        font-size: 2.7vw;
+        padding: 0vw 1vw;
+    }
+    #page2 p2 {
+        font-size: 3.5vw;
+    }
+    #page3 .box{
+        height: 61vw;
+    }
+    #page3 p3{
+        font-size: 2.65vw;
+        padding: 0vw 0.5vw;
+    }
+    .contact h1{
+        font-size: 6vw;
+    }
+}
