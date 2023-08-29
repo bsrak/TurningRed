@@ -1,2 +1,3 @@
 # TurningRed
-This project is a redesign of Pixar's animated film Turning Red's website. 
+A responsive website for Pixar's animated film Turning Red. 
+It's a redesign of the original website. 
